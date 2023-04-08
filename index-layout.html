@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+    <title>layout</title>	
+	<style>
+	*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	
+	
+	}
+	nav{
+	background-color:pink;
+	padding:1em;
+	text-transform:uppercase;
+	}
+	
+	.header{
+	padding:5em;
+	background-color:yellow;
+	}
+	
+	.content{
+	display:flex;
+	flex-wrap:wrap;
+justify-content:flex-end;
+	height:45vh;
+	
+	overflow-y:auto;
+	gap:10px;
+	
+}
+
+	
+	
+	footer{
+	width:100%;
+	margin-top:2em;
+
+	background-color:black;
+	padding:3em;
+	color:white;
+	}
+	aside{
+	display:flex;
+	float:left;
+	position:fixed;
+	padding:2em;
+	padding-top:18em;
+	background-color:gainsboro;
+	flex-direction:column;
+	height:95vh;
+	margin-top:50px;
+	
+	}
+	.ad{
+	text-align:center;
+	}
+	
+	.content .box{
+	display:flex;
+margin-top:20px;
+margin-right:20px;
+margin-right:10px;
+	background-color:blue;
+	width:230px;
+	height:20vh;
+
+	padding:1em;
+
+	}
+
+
+	
+	</style>
+	
+	</head>
+	<div class="ad">
+	<aside>Ad</aside>
+	</div>
+	
+	<body>
+	
+	<center><nav>navbar</nav></center>
+	
+	<div class="header">
+	<center><header>Header</header><center>
+	</div>
+	
+     <section class ="content">
+
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+		<div class="box"></div>
+	</section>
+		
+	<div>
+	</body>
+	<center><footer>footer</footer><center>
+	</html>

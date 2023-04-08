@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Navbar</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<Style>
+	
+	*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	
+	}
+	
+	nav{
+	transition:700ms;
+	background:gainsboro;
+	position:fixed;
+	width:100%;
+		transform:translatex(80rem);
+	}
+	
+	nav:hover{
+	transition:700ms;
+	transform:translatex(-0rem);
+	background:gainsboro;
+	position:fixed;
+	width:100%;
+	}
+	
+	
+	
+	nav ul{
+		display:flex;
+	flex-wrap:wrap;
+	list-style:none;
+	float:right;
+	gap:2em;
+	padding:2em;
+	
+	}
+	
+	
+	img{
+	justify-content:center;
+	height:10vh;
+	width:70px;
+	border-radius:50px;
+	margin-left:8px;
+	margin-top:9px;
+	cursor:pointer;ss
+	}
+	
+	
+	nav ul li:hover{
+
+	color:blue;
+	cursor:pointer;
+	}
+	
+	#fa{
+	display:none;
+	}
+	
+	@media  screen and (max-width:650px) {
+		nav{
+	transition:20ms;
+	background:gainsboro;
+	position:fixed;
+	transform:translatex(30rem);
+	width:100%;
+	}
+	
+	nav ul li:not(#fa){
+	display:none;
+	}
+	
+	 #fa{
+	display:block;
+
+	}
+	}
+	
+	
+	
+		</style>
+	</head>
+
+	<body>
+	<nav>
+	<img src="pictures/bass8.jpeg">
+	<ul>
+	<li id ="fa"><span  class="fa fa-bars"></span></li>
+	<li>Home</li>
+	<li>Contact</li>
+	<li>About</li>
+	<li>Account</li>
+	</ul>
+	
+	
+	</nav>
+	
+	</body>
+	
+	</html>
